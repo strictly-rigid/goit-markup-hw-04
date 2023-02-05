@@ -188,6 +188,7 @@ address {
     ),
     url(../images/people-office.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   max-width: 1440px;
   max-height: 600px;
 
@@ -377,19 +378,16 @@ address {
   height: 88px;
 
   color: #8e8f99;
-  border: 1px solid #8e8f99;
+  border: 1px solid currentColor;
   border-radius: 4px;
 }
 
 .customers-link:hover,
 .customers-link:focus {
   color: var(--pressed-state-color);
-  border-color: var(--pressed-state-color);
 }
 
 .customers-icon {
-  display: block;
-  margin: 0 auto;
   fill: currentColor;
 }
 
@@ -402,13 +400,13 @@ address {
 
 .footer {
   background-color: var(--headings-herobackground-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-general {
   display: flex;
   align-items: flex-start;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .name-studio-footer {
@@ -458,11 +456,7 @@ address {
 }
 
 .social-media-footer {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: 120px;
-  width: 208px;
-  height: 80px;
 }
 
 .social-media {
@@ -478,7 +472,6 @@ address {
 
 .social-list-footer {
   display: flex;
-  /* background-color: aqua; */
 }
 
 .social-list.list {
@@ -539,7 +532,13 @@ address {
   margin-bottom: 48px;
 }
 
-.portfolio-list:hover {
+.portfolio-item {
+  display: block;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
